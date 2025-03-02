@@ -75,16 +75,35 @@ class Program
 
              if (menuChoice == "2")
             {
+                Console.WriteLine("Edit Task: ");
                 
+                
+                
+                
+                ///  2. Edit Task
+                ///     * Name of Task:
+                ///     * Change Due date:
+                ///     * Change description:
             }
 
              if (menuChoice == "3")
             {
+                Console.WriteLine("View All Tasks ");
                 
+                
+                
+                /// 3. View All Tasks:
+                ///    * Displays all tasks
             }
 
             else if (menuChoice == "4")
             {
+                Console.WriteLine("Delete Task: ");
+                
+                
+                // 4. Delete Task:
+                ///    * Find task by name:
+                ///    * Removing task
 
             }
 
@@ -92,8 +111,15 @@ class Program
              if (menuChoice == "5")
             {
                 Console.WriteLine("Goodbye!");
+                break;
                 
+                
+                
+                
+                /// 5. Exit
+                ///    * Console.WriteLine("Goodbye");
             }
+             
              else 
              {
                 Console.WriteLine("Please enter a valid choice!! (1-5)"); 
