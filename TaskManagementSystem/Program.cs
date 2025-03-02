@@ -4,14 +4,15 @@ class Program
 {
     static void Main(string[] args)
     {
-        string menuChoice;
         
         List<Task> TaskList = new List<Task>();
         
         
         while (true)
         {
-            Console.WriteLine("Welcome to TaskManagementSystem!");
+            
+ 
+            Console.WriteLine("\t Welcome to TaskManagementSystem!");
             Console.WriteLine("Pick one of the following options: ");
             
             Console.WriteLine("1. Add task: ");
@@ -24,11 +25,13 @@ class Program
             
             Console.WriteLine("5. Exit: ");
             
-            menuChoice = Console.ReadLine();
-            
+            int menuChoice = Convert.ToInt32(Console.ReadLine());
+
+           
+           
             
             // menu option 1: 
-            if (menuChoice == "1")
+            if (menuChoice == 1)
             {
                 Console.WriteLine("Task Name: ");
                 string taskName = Console.ReadLine();
@@ -74,7 +77,7 @@ class Program
                 
             
             // Menu option 2: 
-             if (menuChoice == "2")
+             else if (menuChoice == 2)
             {
                 Console.WriteLine("Edit Task: ");
                 
@@ -88,9 +91,14 @@ class Program
             }
 
             // Menu option 3: 
-             if (menuChoice == "3")
+            else if (menuChoice == 3)
             {
-                Console.WriteLine("View All Tasks ");
+                Console.WriteLine("All Tasks ");
+                if (TaskList.Count > 0)
+                {
+                    foreach (Task task in TaskList)
+                        task.TaskInfo();
+                }
                 
                 
                 
@@ -99,11 +107,15 @@ class Program
             }
 
              // Menu option 4: 
-            else if (menuChoice == "4")
+            else if (menuChoice == 4)
             {
                 Console.WriteLine("Delete Task: ");
                 
+                foreach (Task task in TaskList)
                 
+                TaskList.Remove(task);
+
+
                 // 4. Delete Task:
                 ///    * Find task by name:
                 ///    * Removing task
@@ -112,19 +124,24 @@ class Program
 
 
             // Menu option 5: 
-             if (menuChoice == "5")
-            {
-                Console.WriteLine("Goodbye!");
-                break;
-                
-                
-                
-                
-                /// 5. Exit
-                ///    * Console.WriteLine("Goodbye");
-            } 
-             
+             else if (menuChoice == 5)
+             {
+                 Console.WriteLine("Goodbye!");
+                 break;
 
+
+
+
+                 /// 5. Exit
+                 ///    * Console.WriteLine("Goodbye");
+             }
+
+             else 
+            {
+                Console.WriteLine("Invalid Choice! Only 1-5");
+                
+            }
+            
             
         }
 

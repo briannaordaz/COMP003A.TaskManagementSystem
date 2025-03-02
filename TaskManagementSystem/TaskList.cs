@@ -1,5 +1,8 @@
 namespace TaskManagementSystem;
 
+/// <summary>
+/// public class named "TaskList" that inherits from the base class "Task"
+/// </summary>
 public class TaskList : Task
 {
     
