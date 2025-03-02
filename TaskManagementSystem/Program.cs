@@ -8,7 +8,6 @@ class Program
         
         List<Task> TaskList = new List<Task>();
         
-        List<Task> tasks = new List<Task>();
         
         while (true)
         {
@@ -27,6 +26,8 @@ class Program
             
             menuChoice = Console.ReadLine();
             
+            
+            // menu option 1: 
             if (menuChoice == "1")
             {
                 Console.WriteLine("Task Name: ");
@@ -57,7 +58,7 @@ class Program
                          else
                          {
                              Console.WriteLine("Task created successfully! ");
-                             TaskList.Add(new Task{NameOfTask = taskName, DueDate = dueDate, Description = taskDescription});
+                             TaskList.Add(new TaskList{NameOfTask = taskName, DueDate = dueDate, Description = taskDescription});
 
                          }
                      }
@@ -72,7 +73,7 @@ class Program
 
                 
             
-
+            // Menu option 2: 
              if (menuChoice == "2")
             {
                 Console.WriteLine("Edit Task: ");
@@ -86,6 +87,7 @@ class Program
                 ///     * Change description:
             }
 
+            // Menu option 3: 
              if (menuChoice == "3")
             {
                 Console.WriteLine("View All Tasks ");
@@ -96,6 +98,7 @@ class Program
                 ///    * Displays all tasks
             }
 
+             // Menu option 4: 
             else if (menuChoice == "4")
             {
                 Console.WriteLine("Delete Task: ");
@@ -108,6 +111,7 @@ class Program
             }
 
 
+            // Menu option 5: 
              if (menuChoice == "5")
             {
                 Console.WriteLine("Goodbye!");
@@ -118,17 +122,14 @@ class Program
                 
                 /// 5. Exit
                 ///    * Console.WriteLine("Goodbye");
-            }
+            } 
              
-             else 
-             {
-                Console.WriteLine("Please enter a valid choice!! (1-5)"); 
-             }
 
             
         }
-        
 
-        
+
+
+
     }
 }

@@ -1,9 +1,9 @@
 namespace TaskManagementSystem;
 
 /// <summary>
-/// Task Class 
+/// Task abstract Class 
 /// </summary>
-public class Task
+public abstract class Task
 {
     
     /// <summary>
@@ -50,4 +50,9 @@ public class Task
         get { return _descriptionOfTask; } 
         set { _descriptionOfTask = value; }
     }
+
+    /// <summary>
+    /// added an abstract method that will be implemented by a derived class
+    /// </summary>
+    public abstract void TaskInfo();
 }
