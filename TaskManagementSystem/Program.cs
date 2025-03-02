@@ -6,6 +6,10 @@ class Program
     {
         string menuChoice;
         
+        List<Task> TaskList = new List<Task>();
+        
+        List<Task> tasks = new List<Task>();
+        
         while (true)
         {
             Console.WriteLine("Welcome to TaskManagementSystem!");
@@ -19,9 +23,7 @@ class Program
             
             Console.WriteLine("4. Delete task: ");
             
-            Console.WriteLine("5. Other: ");
-            
-            Console.WriteLine("6. Exit: ");
+            Console.WriteLine("5. Exit: ");
             
             menuChoice = Console.ReadLine();
             
@@ -30,33 +32,66 @@ class Program
                 Console.WriteLine("Task Name: ");
                 string taskName = Console.ReadLine();
             
-                Console.WriteLine("");
+                if (string.IsNullOrWhiteSpace(taskName))
+                {
+                    Console.WriteLine("Please enter a name for the task!: ");
+                }
+                else
+                {
+                    Console.WriteLine("Due Date: ");
+                    int dueDate = int.Parse(Console.ReadLine());
+                    
+                    
+                }
+                
+                Console.WriteLine("Description: ");
+                string description = Console.ReadLine();
+                 
+                if (string.IsNullOrWhiteSpace(description))
+                {
+                    Console.WriteLine("Please enter a description for the task!!");
+                    
+                }
+                else
+                {
+                    Console.WriteLine("Task created successfully!! ");
+                }
+                
+                
+                
+
             }
 
-            if (menuChoice == "2")
+                
+            
+
+             if (menuChoice == "2")
             {
                 
             }
 
-            if (menuChoice == "3")
+             if (menuChoice == "3")
             {
                 
             }
 
-            if (menuChoice == "4")
+            else if (menuChoice == "4")
             {
-                
+
             }
 
-            if (menuChoice == "5")
-            {
-                
-            }
 
-            if (menuChoice == "6")
+             if (menuChoice == "5")
             {
+                Console.WriteLine("Goodbye!");
                 
             }
+             else 
+             {
+                Console.WriteLine("Please enter a valid choice!! (1-5)"); 
+             }
+
+            
         }
         
 

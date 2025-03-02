@@ -12,3 +12,4 @@
 /Users/brianna/RiderProjects/TaskManagementSystem/TaskManagementSystem/obj/Debug/net8.0/TaskManagementSystem.pdb
 /Users/brianna/RiderProjects/TaskManagementSystem/TaskManagementSystem/obj/Debug/net8.0/TaskManagementSystem.genruntimeconfig.cache
 /Users/brianna/RiderProjects/TaskManagementSystem/TaskManagementSystem/obj/Debug/net8.0/ref/TaskManagementSystem.dll
+/Users/brianna/RiderProjects/TaskManagementSystem/TaskManagementSystem/obj/Debug/net8.0/TaskManagementSystem.sourcelink.json
