@@ -1,0 +1,14 @@
+/Users/brianna/RiderProjects/TaskManagementSystem/TaskManagementSystem/bin/Debug/net8.0/TaskManagementSystem
+/Users/brianna/RiderProjects/TaskManagementSystem/TaskManagementSystem/bin/Debug/net8.0/TaskManagementSystem.deps.json
+/Users/brianna/RiderProjects/TaskManagementSystem/TaskManagementSystem/bin/Debug/net8.0/TaskManagementSystem.runtimeconfig.json
+/Users/brianna/RiderProjects/TaskManagementSystem/TaskManagementSystem/bin/Debug/net8.0/TaskManagementSystem.dll
+/Users/brianna/RiderProjects/TaskManagementSystem/TaskManagementSystem/bin/Debug/net8.0/TaskManagementSystem.pdb
+/Users/brianna/RiderProjects/TaskManagementSystem/TaskManagementSystem/obj/Debug/net8.0/TaskManagementSystem.GeneratedMSBuildEditorConfig.editorconfig
+/Users/brianna/RiderProjects/TaskManagementSystem/TaskManagementSystem/obj/Debug/net8.0/TaskManagementSystem.AssemblyInfoInputs.cache
+/Users/brianna/RiderProjects/TaskManagementSystem/TaskManagementSystem/obj/Debug/net8.0/TaskManagementSystem.AssemblyInfo.cs
+/Users/brianna/RiderProjects/TaskManagementSystem/TaskManagementSystem/obj/Debug/net8.0/TaskManagementSystem.csproj.CoreCompileInputs.cache
+/Users/brianna/RiderProjects/TaskManagementSystem/TaskManagementSystem/obj/Debug/net8.0/TaskManagementSystem.dll
+/Users/brianna/RiderProjects/TaskManagementSystem/TaskManagementSystem/obj/Debug/net8.0/refint/TaskManagementSystem.dll
+/Users/brianna/RiderProjects/TaskManagementSystem/TaskManagementSystem/obj/Debug/net8.0/TaskManagementSystem.pdb
+/Users/brianna/RiderProjects/TaskManagementSystem/TaskManagementSystem/obj/Debug/net8.0/TaskManagementSystem.genruntimeconfig.cache
+/Users/brianna/RiderProjects/TaskManagementSystem/TaskManagementSystem/obj/Debug/net8.0/ref/TaskManagementSystem.dll
