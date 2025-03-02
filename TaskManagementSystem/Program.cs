@@ -38,27 +38,35 @@ class Program
                 }
                 else
                 {
-                    Console.WriteLine("Due Date: ");
-                    int dueDate = int.Parse(Console.ReadLine());
+                    Console.WriteLine("Due Date (YYYY-MM-DD): ");
+                     DateTime dueDate;
+
+                     if (!DateTime.TryParse(Console.ReadLine(), out dueDate))
+                     {
+                        Console.WriteLine("Please enter a valid due date!: ");
+                     }
+                     else
+                     {
+                         Console.WriteLine("Enter Task Description: ");
+                         string taskDescription = Console.ReadLine();
+
+                         if (string.IsNullOrWhiteSpace(taskDescription))
+                         {
+                             Console.WriteLine("Please enter a description for the task!: ");
+                         }
+                         else
+                         {
+                             Console.WriteLine("Task created successfully! ");
+                             TaskList.Add(new Task{NameOfTask = taskName, DueDate = dueDate, Description = taskDescription});
+
+                         }
+                     }
                     
                     
                 }
                 
-                Console.WriteLine("Description: ");
-                string description = Console.ReadLine();
-                 
-                if (string.IsNullOrWhiteSpace(description))
-                {
-                    Console.WriteLine("Please enter a description for the task!!");
-                    
-                }
-                else
-                {
-                    Console.WriteLine("Task created successfully!! ");
-                }
-                
-                
-                
+
+
 
             }
 
