@@ -12,6 +12,7 @@ public class TaskList : Task
     /// </summary>
     public override void TaskInfo()
     {
-        Console.WriteLine("Task Name: " + " " + NameOfTask + " " + " *****" + "Date/Time: " + " " + DueDate + " " + "***** " + "Description: " + " "+ Description);
+        Console.WriteLine("Task Name: " + " " + NameOfTask + " " + " *****" + " " + "Date/Time: " + " " + DueDate + " " + "***** " + "Description: " + " "+ Description);
     }
 }
+

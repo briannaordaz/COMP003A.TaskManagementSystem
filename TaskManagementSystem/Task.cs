@@ -30,7 +30,8 @@ public abstract class Task
     }
 
     /// <summary>
-    /// this is a public property for the due date of the task 
+    /// this is a public property for the due date of the task
+    /// "DateTime?" will store the dates and times if the user decides to include it
     /// </summary>
     public DateTime? DueDate
     {
