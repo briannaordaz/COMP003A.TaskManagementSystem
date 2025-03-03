@@ -42,7 +42,7 @@ class Program
                 }
                 else
                 {
-                    Console.WriteLine("Due Date (YYYY-MM-DD): ");
+                    Console.WriteLine("Due Date (YYYY-MM-DD) 00:00:00 AM/PM: ");
                      DateTime dueDate;
 
                      if (!DateTime.TryParse(Console.ReadLine(), out dueDate))
