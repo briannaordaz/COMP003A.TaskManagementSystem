@@ -110,10 +110,32 @@ class Program
             else if (menuChoice == 4)
             {
                 Console.WriteLine("Delete Task: ");
-                
-                foreach (Task task in TaskList)
-                
-                TaskList.Remove(task);
+
+                if (TaskList.Count > 0)
+
+                {
+                    Console.WriteLine("Name of task you want to delete: ");
+                    string deleteTask = Console.ReadLine();
+                    
+                    Task taskName = TaskList.Find(x => x.NameOfTask == deleteTask);
+
+                    if (taskName != null)
+                    {
+                        TaskList.Remove(taskName);
+                        Console.WriteLine("Task deleted successfully!");
+                    }
+                    else
+                    {
+                        Console.WriteLine("Task cannot be found in the list!");
+                    }
+                    
+                }
+                else
+                {
+                    Console.WriteLine("There are no tasks to delete!");
+                }
+
+
 
 
                 // 4. Delete Task:
